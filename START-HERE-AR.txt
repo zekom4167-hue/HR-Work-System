@@ -1,0 +1,13 @@
+HR WORK SYSTEM — حزمة مصدر محدثة لإعداد بناء Android App Bundle
+الإصدار البرمجي: 0.2.0
+
+تم تحديث إعدادات Android إلى compileSdk/targetSdk 36، وإضافة GitHub Actions لبناء Release AAB موقّع باستخدام أسرار المستودع دون وضع مفتاح التوقيع داخل الكود.
+
+الخطوات:
+1) ارفع محتويات هذا المجلد إلى مستودع GitHub خاص.
+2) اتبع ملف GITHUB-RELEASE-AR.md لإنشاء مفتاح الرفع وإضافة أسراره الأربعة إلى GitHub Actions.
+3) شغّل Actions باسم Build signed Google Play AAB.
+4) بعد نجاح البناء، حمّل Artifact باسم HR-Work-System-release-AAB.
+
+تنبيه أمني جوهري:
+التطبيق الحالي لا يزال نموذجاً محلياً يعتمد على WebView وlocalStorage. لا توجد مصادقة فعلية أو صلاحيات خادمية أو Backend أو تشفير لبيانات HR. لا تستخدم بيانات موظفين حقيقية ولا تنشره للإنتاج قبل استكمال هذه المكونات واختبارها. وجود Workflow لا يعني أن AAB بُني بالفعل أو أنه اجتاز مراجعة Google Play.
